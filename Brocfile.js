@@ -21,7 +21,10 @@ var assetsWithTemplates = handlebars('assets', {
 var appJs = concat(assetsWithTemplates, {
   inputFiles: [
     'js/setup.js',
-    'templates/**/*.js'
+    'templates/**/*.js',
+    'js/todo.js',
+    'js/views/app.js',
+    'js/todo-mvc.js'
     /* Your app files here */
   ],
   outputFile: 'app.js'
@@ -29,9 +32,8 @@ var appJs = concat(assetsWithTemplates, {
 
 var sassDirs = [
   'assets/scss',
-  'bower_components/reset-css',
-  'bower_components/bourbon/app/assets/stylesheets',
-  'bower_components/neat/app/assets/stylesheets'
+  'bower_components/todomvc-common',
+  'bower_components/todomvc-app-css'
 ];
 
 var appCss = sass(sassDirs, 'app.scss', 'app.css');

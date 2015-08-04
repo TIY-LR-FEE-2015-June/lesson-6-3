@@ -17,6 +17,8 @@
     "handlebars": "~3.0.3",
     "reset-css": "~2.0.2011012602",
     "neat": "~1.7.2",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "todomvc-common": "~1.0.2",
+    "todomvc-app-css": "~2.0.1"
   }
 }
